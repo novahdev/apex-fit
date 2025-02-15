@@ -29,6 +29,11 @@ header.layout-header {
             }
         }
     }
+
+    .access-control {
+        display: flex;
+        column-gap: .5rem;
+    }
 }
 
 .layout-content {

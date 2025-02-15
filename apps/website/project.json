@@ -22,7 +22,10 @@
             "input": "apps/website/public"
           }
         ],
-        "styles": ["apps/website/src/styles.scss"],
+        "styles": [
+          "apps/website/src/styles.less",
+          "apps/website/src/styles.scss"
+        ],
         "scripts": [],
         "server": "apps/website/src/main.server.ts",
         "ssr": {
