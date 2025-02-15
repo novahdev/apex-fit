@@ -1,0 +1,44 @@
+:host {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100dvh;
+}
+header.layout-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    padding: .3rem 1rem;
+    align-items: center;
+    nav {
+        display: flex;
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                margin-left: 1rem;
+                cursor: pointer;
+                padding: .2rem .5rem;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                &:hover {
+                    border: 1px solid var(--app-palette-divider);
+                    background-color: var(--app-palette-nav-item-hover);
+                }
+            }
+        }
+    }
+}
+
+.layout-content {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    footer {
+        font-size: small;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: .3rem 1rem;
+    }
+}

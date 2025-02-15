@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --app-palette-divider: hsl(215, 15%, 92%);
+    --app-palette-text-primary: hsl(215, 15%, 12%);
+    --app-palette-text-secondary: hsl(215, 15%, 22%);
+    --app-palette-text-tertiary: hsl(215, 15%, 40%);
+    --app-palette-text-disabled: rgba(0, 0, 0, 0.38);
+    --app-palette-text-primaryChannel: 26 30 35;
+    --app-palette-text-secondaryChannel: 48 55 65;
+
+    --app-palette-nav-item-hover: hsl(215, 15%, 97%);
+
+    --app-font-family: "IBM Plex Sans", serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+}
+
+body {
+    margin: 0;
+    font-family: var(--app-font-family);
+}
