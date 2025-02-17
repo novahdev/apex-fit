@@ -28,3 +28,10 @@ section {
         }
     }
 }
+
+footer{
+    font-size: small;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: .3rem 1rem;
+}
