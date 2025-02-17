@@ -39,6 +39,7 @@ create table users
     "verified" boolean not null default false,
     "email" email not null,
     "username" varchar(10) not null unique,
+    "alias" varchar(40) not null,
     "name" varchar(20) not null,
     "last_name" varchar(20) not null,
     "sex" sex not null,
@@ -46,12 +47,13 @@ create table users
     "tall" integer not null,
     "weight" integer not null,
     "cellphone" cellphone,
-    "nationality" char(2),
-    "address" varchar(50),
-    "city" char(5),
-    "state" char(2),
-    "country" char(2),
+    "nationality" char(2) not null,
+    "address" varchar(50) null,
+    "city" char(5) not null,
+    "state" char(2) not null,
+    "country" char(2) not null,
     "zip_code" text,
+    "jwt_secret_ket" uuid not null default gen_random_uuid(),
     "password" text not null
 );
 
