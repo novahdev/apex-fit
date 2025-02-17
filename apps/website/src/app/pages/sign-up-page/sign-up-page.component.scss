@@ -1,0 +1,39 @@
+:host {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+}
+section.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        h1, h2 {
+            margin: 0;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            // nz-form-item {
+            //     width: 100%;
+            // }
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            row-gap: .5rem;
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

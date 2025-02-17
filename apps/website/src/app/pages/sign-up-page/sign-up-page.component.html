@@ -1,0 +1,86 @@
+<section class="content">
+    <form nz-form>
+        <h1 style="text-align: center; cursor: pointer;" routerLink="/">Apex Fit Colombia</h1>
+        <h2>Registrarse</h2>
+
+        <div class="inputs">
+    
+            <nz-form-item style="margin-bottom: 0;">
+                <nz-form-control>
+                    <input nz-input placeholder="Nombres"/>
+                </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item style="margin-bottom: 0;">
+                <nz-form-control>
+                    <input nz-input placeholder="Apellidos"/>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item style="margin-bottom: 0;">
+                <nz-form-control>
+                    <nz-date-picker style="width: 100%;" nzPlaceHolder="Fecha de nacimiento"/>
+                </nz-form-control>
+            </nz-form-item>
+
+            <div style="display: flex; column-gap: .3rem;">
+                <nz-form-item style="margin-bottom: 0;">
+                    <nz-form-control>
+                        <nz-select nzPlaceHolder="Género">
+                            <nz-option nzValue="M" nzLabel="M"/>
+                            <nz-option nzValue="F" nzLabel="F"/>
+                        </nz-select>
+                    </nz-form-control>
+                </nz-form-item>
+               
+                <nz-form-item style="margin-bottom: 0;">
+                    <nz-form-control>
+                        <input nz-input placeholder="Peso (Kg)"/>
+                    </nz-form-control>
+                </nz-form-item>
+            </div>
+            <nz-form-item style="margin-bottom: 0;">
+                <nz-form-control>
+                    <input nz-input placeholder="Nacionalidad"/>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item style="margin-bottom: 0;">
+                <nz-form-control>
+                    <input nz-input placeholder="Correo electrónico"/>
+                </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item style="margin-bottom: 0;">
+                <nz-form-control>
+                    <input nz-input placeholder="Teléfono"/>
+                </nz-form-control>
+            </nz-form-item>
+
+        </div>
+
+        <nz-form-item style="margin-bottom: 0;">
+            <nz-form-control>
+                <input nz-input placeholder="Usuario"/>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item style="margin-bottom: 0;">
+            <nz-form-control>
+                <input nz-input placeholder="Contraseña"/>
+            </nz-form-control>
+        </nz-form-item>
+        <div style="text-align: right">
+            <a routerLink="/forgot-password">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="controls">
+            <button nz-button type="button" nzType="primary">Registrarse</button>
+            <button nz-button type="button" nzType="text" routerLink="/login">Iniciar sesión</button>
+        </div>
+    </form>
+</section>
+<footer style="display: grid; grid-template-columns: 1fr auto; padding: .5rem 1rem;">
+    <div>
+        Copyright © 2025 Grupo Novah SAS.
+    </div>
+    <div>
+        Soporte
+    </div>
+</footer>
