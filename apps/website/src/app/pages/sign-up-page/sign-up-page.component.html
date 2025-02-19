@@ -40,7 +40,11 @@
             </div>
             <nz-form-item style="margin-bottom: 0;">
                 <nz-form-control>
-                    <input nz-input placeholder="Nacionalidad"/>
+                    <nz-select nzShowSearch nzPlaceHolder="Nacionalidad">
+                        @for (item of countries(); track $index) {
+                            <nz-option [nzValue]="item.code" [nzLabel]="item.name"/>
+                        }
+                    </nz-select>
                 </nz-form-control>
             </nz-form-item>
             <nz-form-item style="margin-bottom: 0;">

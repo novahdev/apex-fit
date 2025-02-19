@@ -1,0 +1,30 @@
+export const COLUMNS_USERS = [
+    'id',
+    'created_at AS "createdAt"',
+    'updated_at AS "updatedAt"',
+    'status',
+    'role',
+    'is_coach AS "isCoach"',
+    'verified',
+    'category',
+    'email',
+    'username',
+    'alias',
+    'name',
+    'last_name AS "lastName"',
+    'sex',
+    'birthdate',
+    'tall',
+    'weight',
+    'cellphone',
+    'nationality',
+    'address',
+    'city',
+    'state',
+    'country',
+    'zip_code',
+    'jwt_secret_key AS "jwtSecretKey"',
+    'password'
+];
+
+export const FIELDS_USERS = COLUMNS_USERS.join(', ');

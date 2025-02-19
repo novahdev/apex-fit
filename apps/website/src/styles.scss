@@ -20,3 +20,13 @@ body {
     margin: 0;
     font-family: var(--app-font-family);
 }
+
+.flag {
+    width: 25px;
+    aspect-ratio: 3 / 2;
+    &.co {
+
+        background: url(https://flagcdn.com/co.svg) no-repeat;
+        background-size: contain;
+    }
+}

@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/api/*": ["src/app/api/src/app*"],
+      "@app/api/*": ["apps/api/src/app/*"],
       "@app/shared/*": ["packages/shared/src/*"],
-      "@app/website/*": ["src/app/website/src/app/*"]
+      "@app/website/*": ["apps/website/src/app/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

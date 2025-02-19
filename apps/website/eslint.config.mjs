@@ -39,7 +39,7 @@ export default [
             enforceBuildableLibDependency: true,
             allow: [
               '^.*/eslint(\\.base)?\\.config\\.[cm]?js$',
-              "@app/website"
+              "@app/website",
             ],
             depConstraints: [
               {

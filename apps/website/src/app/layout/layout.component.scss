@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
     min-height: 100dvh;
+    height: 100%;
 }
 header.layout-header {
     display: grid;
@@ -48,11 +49,12 @@ header.layout-header {
 .layout-content {
     display: grid;
     grid-template-rows: 1fr auto;
-
+    overflow: auto;
     main {
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        overflow: auto;
     }
 
     footer {

@@ -1,0 +1,43 @@
+id;username;alias;email;password;role;name;lastName;sex;weight;tall;birthdate;category
+f6bc39ec-d97b-423a-b803-59d6c3c1459f;admin;admin;admin@admin.com;admin;ADMIN;Juan;Cifuentes;M;78;170;1996-11-19;INTERMEDIATE
+de1f94b2-e6ad-44f2-9111-110c72ef6f02;JoseLuis;Jose Luis;joseluis@test.com;admin;USER;Jose Luis;Cardona;M;80;175;1995-11-19;INTERMEDIATE
+a8982112-4999-4812-a12c-267892891398;luiscarlos;Luis Carlos;luiscarlos@test.com;admin;USER;Luis;Redrigez;M;86;179;1999-11-19;BEGINNER
+519b53b2-5d6b-4926-9c34-7c403c37573b;MatiasM;Matias Rivera;matiasrivera@test.com;admin;USER;Matias;Rivera;M;79;176;2000-11-19;BEGINNER
+eeba1953-ef46-4bc9-8d38-452b2ca156eb;juanperez;Juan Perez;juanpe@gtest.com;admin;USER;Juan Carlos;Perez;M;72;158;2003-03-03;BEGINNER
+b3c4d5e6-f7a8-4b9c-0d1e-2b3c4d5e6f7b;pedrogarcia;Pedro Garcia;pedrogarcia@test.com;password;USER;Pedro;Garcia;M;85;180;1992-05-23;RX
+c4d5e6f7-a8b9-4c0d-1e2b-3c4d5e6f7a8b;lauragonzalez;Laura Gonzalez;lauragonzalez@test.com;password;USER;Laura;Gonzalez;F;70;168;1994-09-15;ELITE
+d5e6f7a8-b9c0-4d1e-2b3c-4d5e6f7a8b9c;mariorodriguez;Mario Rodriguez;mariorodriguez@test.com;password;USER;Mario;Rodriguez;M;90;185;1990-12-01;INTERMEDIATE
+e6f7a8b9-c0d1-4e2b-3c4d-5e6f7a8b9c0d;susanalopez;Susana Lopez;susanalopez@test.com;password;USER;Susana;Lopez;F;60;160;1996-03-22;BEGINNER
+f7a8b9c0-d1e2-4b3c-5d6e-7f8a9b0c1d2e;ricardomartinez;Ricardo Martinez;ricardomartinez@test.com;password;USER;Ricardo;Martinez;M;88;182;1993-11-30;ADVANCED
+a8b9c0d1-e2f3-4c5d-6e7f-8a9b0c1d2e3f;patriciagomez;Patricia Gomez;patriciagomez@test.com;password;USER;Patricia;Gomez;F;68;170;1997-08-19;RX
+b9c0d1e2-f3a4-4d5e-6f7a-8b9c0d1e2f3a;andreslopez;Andres Lopez;andreslopez@test.com;password;USER;Andres;Lopez;M;75;172;1995-04-10;ELITE
+c0d1e2f3-a4b5-4e6f-7a8b-9c0d1e2f3a4b;martinagonzalez;Martina Gonzalez;martinagonzalez@test.com;password;USER;Martina;Gonzalez;F;62;167;1999-01-05;BEGINNER
+d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a;danielrodriguez;Daniel Rodriguez;danielrodriguez@test.com;password;USER;Daniel;Rodriguez;M;82;178;1992-02-14;INTERMEDIATE
+e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b;marianalopez;Mariana Lopez;marianalopez@test.com;password;USER;Mariana;Lopez;F;64;162;1994-06-25;ADVANCED
+f3a4b5c6-d7e8-4f9a-0b1c-2d3e4f5a6b7c;franciscogomez;Francisco Gomez;franciscogomez@test.com;password;USER;Francisco;Gomez;M;87;183;1991-09-10;RX
+a4b5c6d7-e8f9-4a0b-1c2d-3e4f5a6b7c8d;sofiagonzalez;Sofia Gonzalez;sofiagonzalez@test.com;password;USER;Sofia;Gonzalez;F;69;169;1996-12-05;ELITE
+b5c6d7e8-f9a0-4b1c-2d3e-4f5a6b7c8d9e;alejandromartinez;Alejandro Martinez;alejandromartinez@test.com;password;USER;Alejandro;Martinez;M;76;174;1993-03-18;BEGINNER
+c6d7e8f9-a0b1-4c2d-3e4f-5a6b7c8d9e0f;isabelgarcia;Isabel Garcia;isabelgarcia@test.com;password;USER;Isabel;Garcia;F;63;161;1995-07-22;INTERMEDIATE
+d7e8f9a0-b1c2-4d3e-5f6a-7b8c9d0e1f2a;victorlopez;Victor Lopez;victorlopez@test.com;password;USER;Victor;Lopez;M;84;181;1990-11-11;ADVANCED
+e8f9a0b1-c2d3-4e5f-6a7b-8c9d0e1f2a3b;carolinagonzalez;Carolina Gonzalez;carolinagonzalez@test.com;password;USER;Carolina;Gonzalez;F;66;164;1998-05-30;RX
+f9a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c;sebastianrodriguez;Sebastian Rodriguez;sebastianrodriguez@test.com;password;USER;Sebastian;Rodriguez;M;89;184;1991-01-20;ELITE
+a0b1c2d3-e4f5-4a6b-7c8d-9e0f1a2b3c4d;martalopez;Marta Lopez;martalopez@test.com;password;USER;Marta;Lopez;F;61;160;1997-09-15;BEGINNER
+b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e;felipegomez;Felipe Gomez;felipegomez@test.com;password;USER;Felipe;Gomez;M;81;177;1994-04-08;INTERMEDIATE
+c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f;angelagonzalez;Angela Gonzalez;angelagonzalez@test.com;password;USER;Angela;Gonzalez;F;67;166;1996-11-03;ADVANCED
+d3e4f5a6-b7c8-4d9e-0f1a-2b3c4d5e6f7a;robertomartinez;Roberto Martinez;robertomartinez@test.com;password;USER;Roberto;Martinez;M;86;180;1992-06-12;RX
+e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b;claudiagarcia;Claudia Garcia;claudiagarcia@test.com;password;USER;Claudia;Garcia;F;70;168;1995-10-27;ELITE
+f5a6b7c8-d9e0-4f1a-2b3c-4d5e6f7a8b9c;fernandolopez;Fernando Lopez;fernandolopez@test.com;password;USER;Fernando;Lopez;M;79;173;1993-02-05;BEGINNER
+a6b7c8d9-e0f1-4a2b-3c4d-5e6f7a8b9c0d;monicagonzalez;Monica Gonzalez;monicagonzalez@test.com;password;USER;Monica;Gonzalez;F;62;161;1998-08-14;INTERMEDIATE
+b7c8d9e0-f1a2-4b3c-5d6e-7f8a9b0c1d2e;eduardomartinez;Eduardo Martinez;eduardomartinez@test.com;password;USER;Eduardo;Martinez;M;83;179;1991-12-23;ADVANCED
+c8d9e0f1-a2b3-4c5d-6e7f-8a9b0c1d2e3f;patriciagarcia;Patricia Garcia;patriciagarcia@test.com;password;USER;Patricia;Garcia;F;65;163;1994-03-29;RX
+d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f3a;andresmartinez;Andres Martinez;andresmartinez@test.com;password;USER;Andres;Martinez;M;78;172;1996-07-18;ELITE
+e0f1a2b3-c4d5-4e6f-7a8b-9c0d1e2f3a4b;martagonzalez;Marta Gonzalez;martagonzalez@test.com;password;USER;Marta;Gonzalez;F;60;160;1999-01-05;BEGINNER
+f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c;danielgomez;Daniel Gomez;danielgomez@test.com;password;USER;Daniel;Gomez;M;82;178;1992-02-14;INTERMEDIATE
+a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d;marianagonzalez;Mariana Gonzalez;marianagonzalez@test.com;password;USER;Mariana;Gonzalez;F;64;162;1994-06-25;ADVANCED
+b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e;franciscorodriguez;Francisco Rodriguez;franciscorodriguez@test.com;password;USER;Francisco;Rodriguez;M;87;183;1991-09-10;RX
+c4d5e6f7-a8b9-4c0d-1e2b-3f4a5b6c7d8e;sofiagomez;Sofia Gomez;sofiagomez@test.com;password;USER;Sofia;Gomez;F;69;169;1996-12-05;ELITE
+d5e6f7a8-b9c0-4d1e-2b3c-4f5a6b7c8d9e;alejandrogonzalez;Alejandro Gonzalez;alejandrogonzalez@test.com;password;USER;Alejandro;Gonzalez;M;76;174;1993-03-18;BEGINNER
+e6f7a8b9-c0d1-4e2b-3c4d-5f6a7b8c9d0e;isabelmartinez;Isabel Martinez;isabelmartinez@test.com;password;USER;Isabel;Martinez;F;63;161;1995-07-22;INTERMEDIATE
+f7a8b9c0-d1e2-4b3c-5d6e-7f8a9b0c1d2e;victorgomez;Victor Gomez;victorgomez@test.com;password;USER;Victor;Gomez;M;84;181;1990-11-11;ADVANCED
+a8b9c0d1-e2f3-4c5d-6e7f-8f9a0b1c2d3e;carolinamartinez;Carolina Martinez;carolinamartinez@test.com;password;USER;Carolina;Martinez;F;66;164;1998-05-30;RX
+b9c0d1e2-f3a4-4d5e-6f7a-8b9c0d1e2f3a;sebastiangonzalez;Sebastian Gonzalez;sebastiangonzalez@test.com;password;USER;Sebastian;Gonzalez;M;89;184;1991-01-20;ELITE

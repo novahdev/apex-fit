@@ -1,4 +1,43 @@
 <h1>Atletas</h1>
-<p>
-    Página en desarrollo
-</p>
+<div class="filters">
+    <input nz-input placeholder="Buscar atleta">
+    <button nz-button>Filtros</button>
+    <!-- <nz-select nzPlaceHolder="Sexo">
+        <nz-option nzValue="M" nzLabel="M"/>
+        <nz-option nzValue="F" nzLabel="F"/>
+    </nz-select>
+    <nz-select nzPlaceHolder="Categoría">
+        <nz-option nzValue="BEGINNER" nzLabel="Principiante"/>
+        <nz-option nzValue="INTERMEDIATE" nzLabel="Intermedio"/>
+        <nz-option nzValue="ADVANCED" nzLabel="Avanzados"/>
+        <nz-option nzValue="RX" nzLabel="RX"/>
+        <nz-option nzValue="ELITE" nzLabel="Elites"/>
+    </nz-select>
+    <nz-select nzPlaceHolder="Departamento">
+
+    </nz-select> -->
+</div>
+<section>
+    <ul>
+        @for (item of list(); track $index) {
+            <li>
+                <div class="avatar">
+
+                </div>
+                <div class="info">
+                    <div class="name">{{ item.alias }}</div>
+                    <div style="display: flex; column-gap: .5rem; align-items: center;">
+                        <!-- <div [classList]="item.nationality | countryFlags"></div> -->
+                        <div class="flag" [style]="item.nationality | countryFlags:'style'"></div>
+                        @if(item.gym){
+                            <div> - </div>
+                            <div>{{ item.gym.name }}</div>
+                        }
+                        <div> - </div>
+                        <div>{{ item.category | athleteCategory }}</div>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</section>

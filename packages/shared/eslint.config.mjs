@@ -16,4 +16,24 @@ export default [
       parser: await import('jsonc-eslint-parser'),
     },
   },
+  {
+    rules: {
+        '@nx/enforce-module-boundaries': [
+          'error',
+          {
+            enforceBuildableLibDependency: true,
+            allow: [
+              '^.*/eslint(\\.base)?\\.config\\.[cm]?js$',
+              "@app/shared"
+            ],
+            depConstraints: [
+              {
+                sourceTag: '*',
+                onlyDependOnLibsWithTags: ['*'],
+              },
+            ],
+          },
+        ]
+    }
+  }
 ];
