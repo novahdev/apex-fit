@@ -1,0 +1,39 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.image-container {
+    background-color: aliceblue;
+    width:200px;
+    height: 300px;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    row-gap: .8rem;
+    flex-wrap: wrap;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    .field {
+        font-size: 95%;
+    }
+    // .value {
+    //     font-size: large;
+    // }
+}

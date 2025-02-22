@@ -11,6 +11,7 @@ export const appRoutes: Route[] = [
             { path: 'atletas', loadComponent: () => import('./pages/athletes-page/athletes-page.component').then(m => m.AthletesPageComponent) },
             { path: 'gyms', loadComponent: () => import('./pages/gyms-page/gyms-page.component').then(m => m.GymsPageComponent) },
             { path: 'competencias', loadComponent: () => import('./pages/competitions-page/competitions-page.component').then(m => m.CompetitionsPageComponent) },
+            { path: 'mi-perfil', loadComponent: () => import('./pages/my-profile-page/my-profile-page.component').then(m => m.MyProfilePageComponent) },
         ]
     },
 ];

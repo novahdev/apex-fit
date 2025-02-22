@@ -1,0 +1,76 @@
+<!-- <section class="image-container">
+
+</section> -->
+
+<section class="info-container">
+    <h3>Información del atleta</h3>
+    <div>
+        <div style="display: flex; gap: 2rem;">
+            <div class="item">
+                <div class="field">Nombres</div>
+                <div class="value">{{ data()?.name ?? "Cargando..." }}</div>
+            </div>
+            <div class="item">
+                <div class="field">Apellido</div>
+                <div class="value">{{ data()?.lastName ?? "Cargando..." }}</div>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="field">Fecha de nacimiento</div>
+            <div class="value">{{ data()?.birthdate  | date }}</div>
+        </div>
+        
+        <div  style="display: flex; column-gap: 2rem;">
+            <div class="item">
+                <div class="field">Sex</div>
+                <div class="value">{{ data()?.sex ?? "Cargando..." }}</div>
+            </div>
+            <div class="item">
+                <div class="field">Altura</div>
+                <div class="value">{{ data()?.tall ?? "Cargando..." }} cm</div>
+            </div>
+            <div class="item">
+                <div class="field">Peso</div>
+                <div class="value">{{ data()?.weight ?? "Cargando..." }} Kg</div>
+            </div>
+            
+            <div class="item">
+                <div class="field">Nacionalidad</div>
+                <div class="value">{{ data()?.nationality ?? "Cargando..." }}</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <button nz-button nzType="text">Editar información</button>
+    </div>
+</section>
+
+
+
+<section>
+    <h3>Información de la cuenta</h3>
+    <div style="display: flex; column-gap: 2rem;">
+        <div class="item">
+            <div class="field">Nombre de usuario</div>
+            <div class="value">{{ data()?.username }}</div>
+        </div>
+        <div class="item">
+            <div class="field">Correo electrónico</div>
+            <div class="value">{{ data()?.email}}</div>
+        </div>
+        <div class="item">
+            <div class="field">Teléfono</div>
+            <div class="value">{{ data()?.cellphone ?? "Sin teléfono" }}</div>
+        </div>
+
+        <div class="item">
+            <div class="field">Alias</div>
+            <div class="value">{{ data()?.alias ?? "Cargando..." }}</div>
+        </div>
+    </div>
+    <div>
+        <button nz-button nzType="text">Editar datos de la cuenta</button>
+    </div>
+</section>
