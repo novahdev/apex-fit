@@ -33,7 +33,7 @@ export class AuthController {
                 user: {
                     id: user.id,
                     role: user.role,
-                    alias: user.alias,
+                    name: user.alias ?? `${user.name} ${user.lastName}`,
                     isCoach: user.isCoach,
                 }
             }
@@ -69,7 +69,7 @@ export class AuthController {
                 user: {
                     id: user.id,
                     role: user.role,
-                    alias: user.alias,
+                    name: user.alias ?? `${user.name} ${user.lastName}`,
                     isCoach: user.isCoach,
                 }
             }
