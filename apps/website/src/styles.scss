@@ -21,6 +21,10 @@ body {
     font-family: var(--app-font-family);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .flag {
     width: 25px;
     aspect-ratio: 3 / 2;
