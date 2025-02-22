@@ -12,8 +12,12 @@
         </ul>
     </nav>
     <div class="access-control">
-        <button nz-button routerLink="/login">Iniciar sesión</button>
-        <button nz-button nzType="primary" routerLink="/registrarse">Registrarse</button>
+        @if (isLoggedIn()){
+            <div>{{ name() }}</div>
+        } @else {
+            <button nz-button routerLink="/login">Iniciar sesión</button>
+            <button nz-button nzType="primary" routerLink="/registrarse">Registrarse</button>
+        }
     </div>
 </header>
 
