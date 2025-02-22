@@ -3,6 +3,7 @@ import { UsersService } from '@app/api/models/users';
 import { ApiProfileResponse } from '@app/shared/api/profile';
 import { BadRequestException, Body, Controller, Get, Put, UseGuards } from '@nestjs/common';
 import { ProfileUpdateDto } from './dto';
+import { ApiResponse } from '@app/shared/api/global/api-response.interface';
 
 @UseGuards(AuthGuard)
 @Controller('profile')
@@ -85,6 +86,31 @@ export class ProfileController {
                 state: raw.state,
                 country: raw.country,
             }
+        }
+    }
+
+    @Put("password")
+    async updatePassword(@Auth() session: AuthSession, @Body() data: { password: string, newPassword: string }): Promise<ApiResponse> {
+
+        const user = await this._usersService.getUser(session.user.id);
+
+        if (!user) {
+            throw new BadRequestException('Usuario no encontrado');
+        }
+
+        await this._usersService.updateUser(user.id, { password: data.newPassword });
+
+        return {
+            message: "Contraseña actualizada"
+        }
+    }
+
+    @Put("close-all-sessions")
+    async closeAllSessions(@Auth() session: AuthSession): Promise<ApiResponse> {
+        await this._usersService.updateUser(session.user.id, { jwtSecretKey: crypto.randomUUID() });
+
+        return {
+            message: "Sesiones cerradas"
         }
     }
 }
