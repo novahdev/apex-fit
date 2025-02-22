@@ -30,6 +30,9 @@ export class AuthService {
   }
 
   public init(): void {
+    if (!this._platform.isBrowser) {
+      return;
+    }
     const session = localStorage.getItem('session');
     if (session) {
       this._session = new Session(JSON.parse(window.atob(session)));
