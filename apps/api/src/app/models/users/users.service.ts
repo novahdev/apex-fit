@@ -14,7 +14,7 @@ export class UsersService {
     ){}
 
     public async getUser(value: string): Promise<User | undefined> {
-        const user = (await this._db.query<UserRaw>(`SELECT ${FIELDS_USERS} FROM users WHERE ${isUUID(value) ? "id" : (isEmail(value) ? "email": "username")    } = $1`, [value])).rows[0] ?? undefined;
+        const user = (await this._db.query<UserRaw>(`SELECT ${FIELDS_USERS} FROM users WHERE ${isUUID(value) ? "id = $1" : (isEmail(value) ? "lower(email) = lower($1)" : "lower(username) = lower($1)")}`, [value])).rows[0] ?? undefined;
         return user ? new User(user) : undefined;
     }
 
