@@ -6,6 +6,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { CountriesService } from '@app/website/common/countries/countries.service';
+import { NzCellphoneComponent } from "../../ui/nz-cellphone/nz-cellphone.component";
 
 @Component({
   selector: 'app-sign-up-page',
@@ -15,8 +16,9 @@ import { CountriesService } from '@app/website/common/countries/countries.servic
     NzButtonModule,
     NzFormModule,
     NzSelectModule,
-    NzDatePickerModule
-  ],
+    NzDatePickerModule,
+    NzCellphoneComponent
+],
   templateUrl: './sign-up-page.component.html',
   styleUrl: './sign-up-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
